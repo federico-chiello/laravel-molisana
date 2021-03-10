@@ -27,3 +27,15 @@ header .navbar ul li a:hover {
   background-color: #b3e5fc;
 }
 
+.container {
+  width: 100%;
+}
+
+.container .sfondo {
+  height: 500px;
+  width: 100%;
+  background-image: url(/images/molisana-home.jpg?cb7db241726fb646d7e1c8553429c07c);
+  background-position: center;
+  background-size: contain;
+}
+

@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/pagina-news', function () {
     return view('news');
 });
+
+Route::get('/pagina-prodotti', function () {
+    return view('products');
+});

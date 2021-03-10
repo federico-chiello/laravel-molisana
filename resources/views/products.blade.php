@@ -8,8 +8,10 @@
         @foreach ($tipologia as $tipo)
         <div class="box">
             <img src="{{ $tipo['src'] }}" alt="{{ $tipo['titolo'] }}">
+            <div class="title">
+                <a href="#">{{ $tipo['titolo'] }}</a>
+            </div>
         </div>
-        {{ $tipo['titolo'] }}
         @endforeach
     </div>
 </div>

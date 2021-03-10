@@ -6,7 +6,7 @@
 
 .container {
   margin: auto;
-  max-width: 1200px;
+  max-width: 1170px;
 }
 
 header {
@@ -43,5 +43,26 @@ header .navbar ul li a:hover {
 .box-container {
   display: flex;
   flex-wrap: wrap;
+}
+
+.box-container .box {
+  width: calc(100% / 3);
+  position: relative;
+}
+
+.box-container .box img {
+  max-width: 100%;
+}
+
+.box-container .box .title {
+  display: none;
+}
+
+.box-container .box:hover .title {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 

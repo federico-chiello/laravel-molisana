@@ -1,3 +1,4 @@
+// Pagina home
 .sfondo{
     height: 500px;
     width: 100%;
@@ -6,7 +7,25 @@
     background-size: cover;
 }
 
+// Pagina prodotti
 .box-container{
     display: flex;
     flex-wrap: wrap;
+    .box{
+        width: calc(100% / 3);
+        position: relative;
+        img{
+            max-width: 100%;
+        }
+        .title{
+            display: none;
+        }
+        &:hover .title{
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
 }

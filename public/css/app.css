@@ -20,6 +20,7 @@ header .navbar ul li {
 header .navbar ul li a {
   text-decoration: none;
   color: #103A7D;
+  padding: 10px;
 }
 
 header .navbar ul li a:hover {

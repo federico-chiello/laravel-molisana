@@ -70,6 +70,14 @@ header .navbar ul li a:hover {
   opacity: 0, 6;
 }
 
+.sfondo-news {
+  height: 500px;
+  width: 100%;
+  background-image: url(/images/fondo-pag-speciali.jpg?06a79f19fbb4489a17e2dff67ce37137);
+  background-position: center;
+  background-size: cover;
+}
+
 footer {
   height: 100px;
   width: 100%;

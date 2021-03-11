@@ -47,9 +47,10 @@
 
 // Pagina dettagli
 .titolo{
-    background-color: #b8dae6;
+    background-color: $bgTitoloDettagli;
     color: white;
     padding-top: 20px;
+    text-align: center;
 }
 .dettagli-container{
     img{
@@ -57,8 +58,24 @@
         max-width: 100%;
     }
     .testo{
-        background-color: #b7d9e5;
+        background-color: $bgDettagliContainer;
         padding-bottom: 20px;
         font-size: 20px;
+    }
+    .informazioni{
+        background-color: $bgDettagliContainer;
+        padding: 20px 0;
+        .container{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .box{
+                text-align: center;
+                i{
+                    font-size: 30px;
+                    padding-bottom: 10px;
+                }
+            }
+        }
     }
 }

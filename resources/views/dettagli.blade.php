@@ -21,9 +21,19 @@
        </div>
    </div>
    <div class="informazioni">
-       <div class="box">
-        <i class="fas fa-info"></i>
-        <p>{{ $formato['tipo'] }}</p>
+       <div class="container">
+            <div class="box">
+                <i class="fas fa-info"></i>
+                <p>{{ $formato['tipo'] }}</p>
+            </div>
+            <div class="box">
+                <i class="far fa-clock"></i>
+               <p>{{ $formato['cottura'] }}</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-weight"></i>
+               <p>{{ $formato['peso'] }}</p>
+            </div>
        </div>
    </div>
 </div>

@@ -76,6 +76,7 @@ header .navbar ul li a:hover {
   background-color: #b8dae6;
   color: white;
   padding-top: 20px;
+  text-align: center;
 }
 
 .dettagli-container img {
@@ -86,6 +87,22 @@ header .navbar ul li a:hover {
   background-color: #b7d9e5;
   padding-bottom: 20px;
   font-size: 20px;
+}
+.dettagli-container .informazioni {
+  background-color: #b7d9e5;
+  padding: 20px 0;
+}
+.dettagli-container .informazioni .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.dettagli-container .informazioni .container .box {
+  text-align: center;
+}
+.dettagli-container .informazioni .container .box i {
+  font-size: 30px;
+  padding-bottom: 10px;
 }
 
 footer {

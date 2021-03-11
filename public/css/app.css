@@ -12,22 +12,18 @@
 header {
   text-align: center;
 }
-
 header .navbar ul {
   list-style: none;
 }
-
 header .navbar ul li {
   display: inline-block;
   padding: 10px;
 }
-
 header .navbar ul li a {
   text-decoration: none;
   color: #103A7D;
   padding: 10px;
 }
-
 header .navbar ul li a:hover {
   background-color: #b3e5fc;
 }
@@ -35,7 +31,7 @@ header .navbar ul li a:hover {
 .sfondo {
   height: 500px;
   width: 100%;
-  background-image: url(/images/molisana-home.jpg?cb7db241726fb646d7e1c8553429c07c);
+  background-image: url("../img/molisana-home.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -44,20 +40,19 @@ header .navbar ul li a:hover {
   display: flex;
   flex-wrap: wrap;
 }
-
 .box-container .box {
   width: calc(100% / 3);
   position: relative;
 }
-
+.box-container .box:hover {
+  opacity: 0.8;
+}
 .box-container .box img {
   max-width: 100%;
 }
-
 .box-container .box .title {
   display: none;
 }
-
 .box-container .box:hover .title {
   display: block;
   position: absolute;
@@ -66,14 +61,10 @@ header .navbar ul li a:hover {
   transform: translate(-50%, -50%);
 }
 
-.box-container:hover .box {
-  opacity: 0, 6;
-}
-
 .sfondo-news {
   height: 500px;
   width: 100%;
-  background-image: url(/images/fondo-pag-speciali.jpg?06a79f19fbb4489a17e2dff67ce37137);
+  background-image: url("../img/fondo-pag-speciali.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -81,8 +72,7 @@ header .navbar ul li a:hover {
 footer {
   height: 100px;
   width: 100%;
-  background-image: url(/images/footer-montagne-bottom.jpg?d53b01335f4c26b84b40ca2ab0a64ece);
+  background-image: url("../../img/footer-montagne-bottom.jpg");
   background-position: center;
   background-size: cover;
 }
-

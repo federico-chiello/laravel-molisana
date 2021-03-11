@@ -2,7 +2,7 @@
 .sfondo{
     height: 500px;
     width: 100%;
-    background-image: url('../../img/molisana-home.jpg');
+    background-image: url('../img/molisana-home.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -14,6 +14,9 @@
     .box{
         width: calc(100% / 3);
         position: relative;
+        &:hover {
+            opacity: 0.8;
+        } 
         img{
             max-width: 100%;
         }
@@ -27,17 +30,14 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
-    }
-    &:hover .box{
-        opacity: 0,6;
-    }   
+    }  
 }
 
 // Pagina news
 .sfondo-news{
     height: 500px;
     width: 100%;
-    background-image: url('../../img/fondo-pag-speciali.jpg');
+    background-image: url('../img/fondo-pag-speciali.jpg');
     background-position: center;
     background-size: cover;
 }

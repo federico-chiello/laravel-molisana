@@ -27,6 +27,10 @@ header .navbar ul li a {
 header .navbar ul li a:hover {
   background-color: #b3e5fc;
 }
+header .navbar ul li a.active {
+  background-color: #b3e5fc;
+  color: white;
+}
 
 .sfondo {
   height: 500px;

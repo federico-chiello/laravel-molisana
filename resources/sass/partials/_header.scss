@@ -10,9 +10,13 @@ header{
                color: $colorNavbar;
                padding: 10px;
                &:hover{
-                   background-color: $bgNavbar;
+                background-color: $bgNavbar;
                }
-           }
+               &.active{
+                   background-color: $bgNavbar;
+                   color: white;
+               }
+           }  
        } 
     }
 }

@@ -26,3 +26,9 @@ Route::get('/sezione prodotti', function () {
     $data = ['tipologia' => $arrayPasta];
     return view('products', $data);
 })->name('pagina-prodotti');
+
+Route::get('/dettaglio/{posizione}', function ($posizione) {
+    $arrayPasta = config('pasta');
+    $prodotto = $arrayPasta[$posizione];
+    return view('dettagli');
+})->name('pagina-dettagli');

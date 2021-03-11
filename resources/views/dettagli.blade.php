@@ -5,11 +5,11 @@
 @section('content')
 <div class="container">
     <div class="box-container">
-        @foreach ($tipologia as $key => $tipo)
+        @foreach ($tipologia as $tipo)
         <div class="box">
             <img src="{{ $tipo['src'] }}" alt="{{ $tipo['titolo'] }}">
             <div class="title">
-                <a href="{{ $key }}">{{ $tipo['titolo'] }}</a>
+                <a href="#">{{ $tipo['titolo'] }}</a>
             </div>
         </div>
         @endforeach

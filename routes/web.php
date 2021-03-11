@@ -13,20 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// HOMEPAGE
 Route::get('/', function () {
     return view('home');
 })->name('homepage');
 
+// PAGINA NEWS
 Route::get('/sezione news', function () {
     return view('news');
 })->name('pagina-news');
 
+// PAGINA PRODOTTI
 Route::get('/sezione prodotti', function () {
     $arrayPasta = config('pasta');
     $data = ['tipologia' => $arrayPasta];
     return view('products', $data);
 })->name('pagina-prodotti');
 
+// PAGINA DETTAGLI
 Route::get('/dettaglio/{posizione}', function ($posizione) {
     $arrayPasta = config('pasta');
     $prodotto = $arrayPasta[$posizione];

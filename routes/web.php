@@ -30,5 +30,8 @@ Route::get('/sezione prodotti', function () {
 Route::get('/dettaglio/{posizione}', function ($posizione) {
     $arrayPasta = config('pasta');
     $prodotto = $arrayPasta[$posizione];
+    $data = [
+        'formato' => $prodotto 
+    ];
     return view('dettagli');
 })->name('pagina-dettagli');

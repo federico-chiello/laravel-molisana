@@ -9,7 +9,7 @@
         <div class="box">
             <img src="{{ $tipo['src'] }}" alt="{{ $tipo['titolo'] }}">
             <div class="title">
-                <a href="{{ $key }}">{{ $tipo['titolo'] }}</a>
+                <a href="{{ route('pagina-dettagli', ['posizione' => $key]) }}">{{ $tipo['titolo'] }}</a>
             </div>
         </div>
         @endforeach

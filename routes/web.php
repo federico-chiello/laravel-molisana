@@ -33,5 +33,5 @@ Route::get('/dettaglio/{posizione}', function ($posizione) {
     $data = [
         'formato' => $prodotto 
     ];
-    return view('dettagli');
+    return view('dettagli', $data);
 })->name('pagina-dettagli');

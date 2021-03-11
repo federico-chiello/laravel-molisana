@@ -49,9 +49,15 @@ Route::get('/sezione prodotti', function () {
 // PAGINA DETTAGLI
 Route::get('/dettaglio/{posizione}', function ($posizione) {
     $arrayPasta = config('pasta');
-    $prodotto = $arrayPasta[$posizione];
-    $data = [
-        'formato' => $prodotto 
-    ];
-    return view('dettagli', $data);
+
+    if($posizione >= 0 && $posizione < count($arrayPasta) && is_numeric($posizione)){
+        $prodotto = $arrayPasta[$posizione];
+        $data = [
+            'formato' => $prodotto 
+        ];
+        return view('dettagli', $data);
+    } else{
+        abort('404');
+    }
+    
 })->name('pagina-dettagli');

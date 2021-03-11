@@ -26,15 +26,24 @@ Route::get('/sezione news', function () {
 // PAGINA PRODOTTI
 Route::get('/sezione prodotti', function () {
     $arrayPasta = config('pasta');
-    $pastaLunga = array_filter($arrayPasta, function($pasta){
-        return $pasta['tipo'] == 'lunga';
-    });
-    $pastaCorta = array_filter($arrayPasta, function($pasta){
-        return $pasta['tipo'] == 'corta';
-    });
-    $pastaCortissima = array_filter($arrayPasta, function($pasta){
-        return $pasta['tipo'] == 'cortissima';
-    });
+
+    // METODO CON ARRAY_FILTER
+    // $pastaLunga = array_filter($arrayPasta, function($pasta){
+    //     return $pasta['tipo'] == 'lunga';
+    // });
+    // $pastaCorta = array_filter($arrayPasta, function($pasta){
+    //     return $pasta['tipo'] == 'corta';
+    // });
+    // $pastaCortissima = array_filter($arrayPasta, function($pasta){
+    //     return $pasta['tipo'] == 'cortissima';
+    // });
+
+    // METODO CON COLLECTION
+    $collection = collect($arrayPasta);
+    $pastaLunga = $collection->where('tipo', 'lunga');
+    $pastaCorta = $collection->where('tipo', 'corta');
+    $pastaCortissima = $collection->where('tipo', 'cortissima');
+
     $data = [
         'tipologia' =>[
             'lunga' => $pastaLunga,

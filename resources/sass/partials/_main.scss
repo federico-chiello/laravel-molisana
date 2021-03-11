@@ -44,3 +44,21 @@
     background-position: center;
     background-size: cover;
 }
+
+// Pagina dettagli
+.titolo{
+    background-color: #b8dae6;
+    color: white;
+    padding-top: 20px;
+}
+.dettagli-container{
+    img{
+        display: flex;
+        max-width: 100%;
+    }
+    .testo{
+        background-color: #b7d9e5;
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+}

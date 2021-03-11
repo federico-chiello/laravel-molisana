@@ -36,10 +36,13 @@ Route::get('/sezione prodotti', function () {
         return $pasta['tipo'] == 'cortissima';
     });
     $data = [
-        'lunga' => $pastaLunga,
-        'corta' => $pastaCorta,
-        'cortissima' => $pastaCortissima
+        'tipologia' =>[
+            'lunga' => $pastaLunga,
+            'corta' => $pastaCorta,
+            'cortissima' => $pastaCortissima
+            ]
         ];
+        
     return view('products', $data);
 })->name('pagina-prodotti');
 
